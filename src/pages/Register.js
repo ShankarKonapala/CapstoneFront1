@@ -9,7 +9,7 @@ function Register() {
     const navigate = useNavigate()
     const onFinish = async (values) =>{
         try{
-            await axios.post('https://646f487af48025004efeef43--phenomenal-donut-75a29d.netlify.app/api/users/register', values)
+            await axios.post('https://capstoneback.onrender.com/api/users/register', values)
             // message.success('Registration successful!!!')
             console.log("Registration successful!!!")
             navigate('/home')
