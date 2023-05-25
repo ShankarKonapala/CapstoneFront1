@@ -10,7 +10,7 @@ function Login() {
   const navigate = useNavigate()
   const onFinish = async (values) =>{
     try{
-      const response = await axios.post('https://646f487af48025004efeef43--phenomenal-donut-75a29d.netlify.app/api/users/login', values)
+      const response = await axios.post('https://capstoneback.onrender.com/api/users/login', values)
       localStorage.setItem('userdata', JSON.stringify(response) )
       // message.success("Login successful!")
       console.log("LogIn successful")
